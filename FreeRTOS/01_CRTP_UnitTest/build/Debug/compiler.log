@@ -1,0 +1,34 @@
+>>> cc
+
+".\src\main.c", line 90: Warning:  #177-D: variable "xReturn"  was declared but never referenced
+      BaseType_t xReturn = pdPASS; /* 定义一个创建信息返回值，默认为pdPASS */
+                 ^
+".\src\main.c", line 184: Warning:  #1295-D: Deprecated declaration UsartlinkInit - give arg types
+  extern void UsartlinkInit();
+              ^
+".\src\main.c", line 41: Warning:  #177-D: variable "Task1_Handle"  was declared but never referenced
+  static TaskHandle_t Task1_Handle = NULL;
+                      ^
+".\src\main.c", line 43: Warning:  #177-D: variable "Task2_Handle"  was declared but never referenced
+  static TaskHandle_t Task2_Handle = NULL;
+                      ^
+".\src\main.c", line 45: Warning:  #177-D: variable "Task3_Handle"  was declared but never referenced
+  static TaskHandle_t Task3_Handle = NULL;
+                      ^
+".\src\main.c", line 119: Warning:  #177-D: function "AppTaskCreate"  was declared but never referenced
+  static void AppTaskCreate(void)
+              ^
+".\src\main.c", line 136: Warning:  #177-D: function "Task1"  was declared but never referenced
+  static void Task1(void *parameter)
+              ^
+".\src\main.c", line 152: Warning:  #177-D: function "Task2"  was declared but never referenced
+  static void Task2(void *parameter)
+              ^
+".\src\main.c", line 168: Warning:  #177-D: function "Task3"  was declared but never referenced
+  static void Task3(void *parameter)
+              ^
+.\src\main.c: 9 warnings, 0 errors
+
+>>> ld
+
+Program Size: Code=7900 RO-data=412 RW-data=180 ZI-data=18148  

@@ -1,0 +1,73 @@
+>>> cc
+
+".\crtp\param_logic.h", line 146: Warning:  #1295-D: Deprecated declaration paramLogicInit - give arg types
+  void paramLogicInit();
+       ^
+".\crtp\param_logic.h", line 151: Warning:  #1295-D: Deprecated declaration paramLogicStorageInit - give arg types
+  void paramLogicStorageInit();
+       ^
+.\crtp\crtpservice.c: 2 warnings, 0 errors
+".\crtp\crtp.c", line 53: Warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(_Bool)"
+    .setEnable         = (void*) nopFunc,
+                         ^
+".\crtp\crtp.c", line 54: Warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(CRTPPacket *)"
+    .sendPacket        = (void*) nopFunc,
+                         ^
+".\crtp\crtp.c", line 55: Warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(CRTPPacket *)"
+    .receivePacket     = (void*) nopFunc,
+                         ^
+".\crtp\crtp.c", line 83: Warning:  #1295-D: Deprecated declaration updateStats - give arg types
+  static void updateStats();
+              ^
+.\crtp\crtp.c: 4 warnings, 0 errors
+".\crtp\usartlink.c", line 61: Warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(0x55, NULL);
+  	            ^
+".\crtp\usartlink.c", line 64: Warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(p->size, NULL);
+  	               ^
+".\crtp\usartlink.c", line 67: Warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(p->header, NULL);
+  	                 ^
+".\crtp\usartlink.c", line 71: Warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  		fputc(p->data[i], NULL);
+  		                  ^
+.\crtp\usartlink.c: 4 warnings, 0 errors
+".\src\main.c", line 91: Warning:  #177-D: variable "xReturn"  was declared but never referenced
+      BaseType_t xReturn = pdPASS; /* 定义一个创建信息返回值，默认为pdPASS */
+                 ^
+".\src\main.c", line 190: Warning:  #223-D: function "UsartlinkInit" declared implicitly
+      UsartlinkInit();
+      ^
+".\src\main.c", line 191: Warning:  #223-D: function "UsartlinkGetLink" declared implicitly
+      crtpSetLink(UsartlinkGetLink());
+                  ^
+".\src\main.c", line 191: Warning:  #167-D: argument of type "int" is incompatible with parameter of type "struct crtpLinkOperations *"
+      crtpSetLink(UsartlinkGetLink());
+                  ^
+".\src\main.c", line 42: Warning:  #177-D: variable "Task1_Handle"  was declared but never referenced
+  static TaskHandle_t Task1_Handle = NULL;
+                      ^
+".\src\main.c", line 44: Warning:  #177-D: variable "Task2_Handle"  was declared but never referenced
+  static TaskHandle_t Task2_Handle = NULL;
+                      ^
+".\src\main.c", line 46: Warning:  #177-D: variable "Task3_Handle"  was declared but never referenced
+  static TaskHandle_t Task3_Handle = NULL;
+                      ^
+".\src\main.c", line 120: Warning:  #177-D: function "AppTaskCreate"  was declared but never referenced
+  static void AppTaskCreate(void)
+              ^
+".\src\main.c", line 137: Warning:  #177-D: function "Task1"  was declared but never referenced
+  static void Task1(void *parameter)
+              ^
+".\src\main.c", line 153: Warning:  #177-D: function "Task2"  was declared but never referenced
+  static void Task2(void *parameter)
+              ^
+".\src\main.c", line 169: Warning:  #177-D: function "Task3"  was declared but never referenced
+  static void Task3(void *parameter)
+              ^
+.\src\main.c: 11 warnings, 0 errors
+
+>>> ld
+
+Program Size: Code=9432 RO-data=456 RW-data=4328 ZI-data=18328  

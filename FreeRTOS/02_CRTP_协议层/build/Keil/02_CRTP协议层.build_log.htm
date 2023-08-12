@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=X96CK-ZMU27-EV31R-K29HW-11VVT-WFP3L
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      UL2CM3.DLL V1.160.12.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\ZHAN\Documents\FreeRTOS\02_CRTP_–≠“È≤„\02_CRTP–≠“È≤„.uvprojx
+Project File Date:  08/01/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target '02_CRTP–≠“È≤„'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+compiling main.c...
+src/main.c(91): warning:  #177-D: variable "xReturn"  was declared but never referenced
+      BaseType_t xReturn = pdPASS; /* ÂÆö‰πâ‰∏Ä‰∏™ÂàõÂª∫‰ø°ÊÅØËøîÂõûÂÄºÔºåÈªòËÆ§‰∏∫pdPASS */
+src/main.c(190): warning:  #223-D: function "UsartlinkInit" declared implicitly
+      UsartlinkInit();
+src/main.c(191): warning:  #223-D: function "UsartlinkGetLink" declared implicitly
+      crtpSetLink(UsartlinkGetLink());
+src/main.c(191): warning:  #167-D: argument of type "int" is incompatible with parameter of type "struct crtpLinkOperations *"
+      crtpSetLink(UsartlinkGetLink());
+src/main.c(42): warning:  #177-D: variable "Task1_Handle"  was declared but never referenced
+  static TaskHandle_t Task1_Handle = NULL;
+src/main.c(44): warning:  #177-D: variable "Task2_Handle"  was declared but never referenced
+  static TaskHandle_t Task2_Handle = NULL;
+src/main.c(46): warning:  #177-D: variable "Task3_Handle"  was declared but never referenced
+  static TaskHandle_t Task3_Handle = NULL;
+src/main.c(120): warning:  #177-D: function "AppTaskCreate"  was declared but never referenced
+  static void AppTaskCreate(void)
+src/main.c(137): warning:  #177-D: function "Task1"  was declared but never referenced
+  static void Task1(void *parameter)
+src/main.c(153): warning:  #177-D: function "Task2"  was declared but never referenced
+  static void Task2(void *parameter)
+src/main.c(169): warning:  #177-D: function "Task3"  was declared but never referenced
+  static void Task3(void *parameter)
+src/main.c: 11 warnings, 0 errors
+compiling stm32f10x_usart.c...
+compiling stm32f10x_gpio.c...
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_it.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling port.c...
+compiling heap_4.c...
+compiling crtp.c...
+crtp/crtp.c(53): warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(_Bool)"
+    .setEnable         = (void*) nopFunc,
+crtp/crtp.c(54): warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(CRTPPacket *)"
+    .sendPacket        = (void*) nopFunc,
+crtp/crtp.c(55): warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "int (*)(CRTPPacket *)"
+    .receivePacket     = (void*) nopFunc,
+crtp/crtp.c(83): warning:  #1295-D: Deprecated declaration updateStats - give arg types
+  static void updateStats();
+crtp/crtp.c: 4 warnings, 0 errors
+compiling crtpservice.c...
+crtp/param_logic.h(146): warning:  #1295-D: Deprecated declaration paramLogicInit - give arg types
+  void paramLogicInit();
+crtp/param_logic.h(151): warning:  #1295-D: Deprecated declaration paramLogicStorageInit - give arg types
+  void paramLogicStorageInit();
+crtp/crtpservice.c: 2 warnings, 0 errors
+compiling bsp_led.c...
+compiling bsp_usart.c...
+compiling static_mem.c...
+compiling bsp_key.c...
+compiling bsp_exti.c...
+compiling usartlink.c...
+crtp/usartlink.c(61): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(0x55, NULL);
+crtp/usartlink.c(64): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(p->size, NULL);
+crtp/usartlink.c(67): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  	fputc(p->header, NULL);
+crtp/usartlink.c(71): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+  		fputc(p->data[i], NULL);
+crtp/usartlink.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=11504 RO-data=532 RW-data=4328 ZI-data=18328  
+".\build\Keil\02_CRTP–≠“È≤„.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_02_CRTP______
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

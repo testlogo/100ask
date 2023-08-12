@@ -1,0 +1,59 @@
+[2023-08-01 12:53:10]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol vApplicationGetIdleTaskMemory (referred from tasks.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-01 13:03:22]	[done]
+	build successfully !
+
+[2023-08-01 13:03:38]	[done]
+	build successfully !
+
+[2023-08-01 13:11:55]	[done]
+	build successfully !
+
+[2023-08-01 13:12:40]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol CRTP_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-01 13:13:07]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol CRTP_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-01 13:13:48]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol usblinkGetLink (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2023-08-01 13:16:08]	[done]
+	build successfully !
+
+[2023-08-01 13:16:30]	[done]
+	build successfully !
+
+[2023-08-01 13:18:38]	[done]
+	build successfully !
+
+[2023-08-01 13:18:53]	[done]
+	build successfully !
+
+[2023-08-01 13:18:59]	[done]
+	build successfully !
+
+[2023-08-01 17:28:38]	[done]
+	build successfully !
+
